@@ -10,3 +10,9 @@
 ```shell
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 ```
+
+3. Enter commands as follows:
+
+```Import-Module ADDSDeployment
+Install-ADDSForest```
+
