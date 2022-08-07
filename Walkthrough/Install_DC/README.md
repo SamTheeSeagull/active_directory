@@ -21,5 +21,22 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 
 - Set ```SafeModeAdministratorPassword``` to the same as our server login password.
 
+4. Setting DNS Client Server Address
+
+Checked for your current DNS Client Server Address with:
+
+```
+Get-DNSClientServerAddress
+```
+
+By default, it's set to our loopback address: ```127.0.0.1```
+
+We changed this to match our server's IP address:
+
+```
+Get-DNSClientServerAddress -InterfaceIndex [Interface Index Listed from the Get command earlier] -ServerAddresses [Server IP Address]
+```
+
+
 
 
