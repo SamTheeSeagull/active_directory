@@ -17,7 +17,9 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 
 ```Install-ADDSForest```
 
-Set the DomainName to the name of the desired domain.
+- Set the DomainName to the name of the desired domain.
 
-Set ```SafeModeAdministratorPassword``` to the same as our server login password.
+- Set ```SafeModeAdministratorPassword``` to the same as our server login password.
+
+
 
